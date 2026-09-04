@@ -58,7 +58,6 @@ async def on_command_completion(ctx):
 @bot.event 
 async def on_member_update(before, after):
     honey_pot = discord.utils.get(after.guild.roles, id=honeypot)
-    age_pot = discord.utils.get(after.guild.roles, id=agepot)
     if honey_pot in after.roles and honey_pot not in before.roles:
         await after.ban(reason = "User grabbed the Honeypot role")
         print(f"{after.name} // {after.id} got banned for grabbing the honeypot role")
