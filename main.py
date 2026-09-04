@@ -1,3 +1,5 @@
+# Code is currently not configured, if you use it please ensure that you change it to match your server's needs
+
 import discord, datetime, time
 from discord import app_commands
 from discord.ext import commands
